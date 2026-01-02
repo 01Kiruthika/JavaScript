@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types</title>
+
+</head>
+
+<body>
+    <h1>Variables rules</h1>
+    <script>
+        // 1. Var Keyword (Older Version)
+
+        var a = 5 //declaration or initialization
+        var a = 10 // Redeclare
+        a = 100 //reassign
+
+        console.log(a)
+
+
+        // 2. let Keyword (Current version )
+        let b = 5 //declaration or initialization
+        // let b = 100 // no declare
+        b = 10 // reassign
+        console.log(b)
+
+        // 3. const Keyword (Current version )
+        const c = 15 //declaration or initialization
+        //const c = 50  // no declare
+        //c=150 // no reassign   error: Assignment to constant variable.
+
+        console.log(c)
+
+
+
+        //Scope or blocked
+        //1. var keyword
+        var x = 100
+         {
+            var y = 150
+            console.log("Inside of Block:", y)
+        }
+        console.log("outside of block:", x)
+
+        //2. let  keyword
+        let a1 = 500 
+        {
+            let a1 = 180
+            console.log("Inside of Block:", a1)
+        }
+        console.log("outside of block:",a1)
+
+        //3.Const keyword
+       const a12 =50
+        {
+            const a12 =150
+            console.log("Inside of Block:", a12)
+        }
+        console.log("outside of block:",a12)
+
+    </script>
+
+</body>
+
+</html>
