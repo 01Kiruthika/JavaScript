@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>urnary Operator</title>
+</head>
+
+<body>
+    <h1>Urnary Operator</h1>
+    <script>
+        //1.
+        let a = 10
+        let b = 10
+        let c = a++ + b++
+            --a
+            --b
+        console.log(a, b, c)
+
+        //2.
+        let z = 5
+            ++z
+            --z
+        z++
+        z--
+        console.log(z)
+
+        //3.
+        let i = 8
+        let j = 2
+        let k = i-- + j++ + --i;
+        console.log(i, j, k)
+
+        //4.
+        let x = 10
+        let y = ++x
+        x--
+        ++y
+        x = x++ + y++ + --x
+        
+        c = parseInt(x) + parseInt(y)
+        let total = parseInt(x) + parseInt(y) + parseInt(c)
+        console.log(x, y, c ,"total = " + total)
+
+
+    </script>
+</body>
+
+</html>
