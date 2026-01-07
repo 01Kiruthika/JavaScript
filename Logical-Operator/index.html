@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Logical Operator</h1>
+    <script>
+         //Logical Operator
+
+        //&&-AND
+        let I = 25
+        let J = 35
+        console.log("The Logical operator (&&) value is", I == J && I != J) //false
+        console.log("The Logical operator (&&) value is", I !== J && I != J && I <= J) //true
+
+        //||-OR
+        let I1 = 25
+        let J1 = 35
+        console.log("The Logical operator (||) value is", I1 == J1 || I1 != J1 || I1 < J1) //true
+        console.log("The Logical operator (||) value is", I1 == J1 || I1 >= J1) //false
+
+        //!-NOT
+        let f = Boolean(25)
+        let g = Boolean(0)
+        console.log("The Logical operator (!) value is", !f) //false
+        console.log("The Logical operator (!) value is", !g) //true
+    </script>
+</body>
+</html>
