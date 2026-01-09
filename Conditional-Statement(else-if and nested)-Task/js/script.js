@@ -48,29 +48,34 @@ else{
     console.log("Please,Enter the Correct Amount")
  }
 
- else if(num<=200)
+ else if(num>=100 && num<=200)
 {
     let x = num * (10/100)// x = 150 * (10/100) => x = 150 * 0.1 => x=15
-    console.log("The discount amount :",x)
+    let X = num - x
+    console.log("The discount amount :",X)
 }
 
-else if(num<=300){
+else if(num>=201 && num<=300){
     let x = num * (20/100)// x = 250 * (20/100) => x = 250 * 0.2 => x=50
-    console.log("The discount amount :",x)
+    let X = num - x
+    console.log("The discount amount :",X)
 }
 
-else if(num<=400){
+else if(num>=301 && num<=400){
     let x = num * (30/100)// x = 380 * (30/100) => x = 380 * 0.3 => x=114
-    console.log("The discount amount :",x)
+     let X = num - x
+    console.log("The discount amount :",X)
 }
 
-else if(num<=500){
+else if(num>=401 && num<=500){
     let x = num * (40/100)// x = 420 * (40/100) => x= 420 * 0.4 => x=168
-    console.log("The discount amount :",x)
+     let X = num - x
+    console.log("The discount amount :",X)
 }
 else if (num > 500){
     let x = num * (50/100)// x = 550 * (50/100) => x = 550 * 0.5 => x=275
-    console.log("The discount amount :",x)
+     let X = num - x
+    console.log("The discount amount :",X)
 }
 else{
     console.log("Invalid")
