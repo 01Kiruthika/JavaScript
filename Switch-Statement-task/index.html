@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <Script>
+        //Switch Statement Task
+
+        let year = parseInt(prompt("Enter the Year:"))
+        let month = prompt(
+            "Choose the Month.\n 1.January.\n 2.February.\n 3.March.\n 4.April.\n 5.May.\n 6.June.\n 7.July.\n 8.August.\n 9.September.\n 10.October.\n 11.November.\n 12.December."
+        )
+
+        //debugger;
+        switch (month) {
+            case "1":
+            case "January":
+                console.log("January Month Contains 31 Days.")
+                break;
+            case "2":
+            case "February":
+                if (year % 4 == 0 && year % 400 == 0) {
+                    console.log("February Month Conatins 29 Days.")
+                } else {
+                    console.log("February Month Conatins 28 Days.")
+                }
+                break;
+            case "3":
+            case "March":
+                console.log("March Month Contains 31 Days.")
+                break;
+            case "4":
+            case "April":
+                console.log("April Month Contains 30 Days.")
+                break;
+            case "5":
+            case "May":
+                console.log("May Month Contains 31 Days.")
+                break;
+            case "6":
+            case "June":
+                console.log("June Month Contains 30 Days.")
+                break;
+            case "7":
+            case "July":
+                console.log("July Month Contains 31 Days.")
+                break;
+            case "8":
+            case "August":
+                console.log("August Month Contains 30 Days.")
+                break;
+            case "9":
+            case "September":
+                console.log("September Month Contains 31 Days.")
+                break;
+            case "10":
+            case "October":
+                console.log("October Month Contains 30 Days.")
+                break;
+            case "11":
+            case "November":
+                console.log("November Month Contains 31 Days.")
+                break;
+            case "12":
+            case "December":
+                console.log("December Month Contains 30 Days.")
+                break;
+            default:
+                console.log('Please,Enter the Correct Option')
+                break;
+        }
+    </Script>
+</body>
+
+</html>
