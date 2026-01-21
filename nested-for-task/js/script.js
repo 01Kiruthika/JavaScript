@@ -161,6 +161,7 @@ for (let r = 1; r <= 5; r++) {
 document.writeln('<br>')
 
 //task-15
+debugger;
 for (let r = 5; r >= 1; r--) {
     for (let c = 1; c <= r; c++) {
         document.writeln("&nbsp;&nbsp;")
@@ -175,6 +176,7 @@ for (let r = 5; r >= 1; r--) {
 document.writeln("<br>")
 
 //task-16
+debugger;
 for (let r = 5; r >= 1; r--) {
     for (let c = 1; c <= r; c++) {
         document.writeln("&nbsp;&nbsp;")
@@ -189,6 +191,7 @@ for (let r = 5; r >= 1; r--) {
 document.writeln("<br>")
 
 //task-17
+debugger;
 for (let r = 1; r <= 5; r++) {
     for (let c = 1; c <= r; c++) {
         document.writeln("&nbsp;&nbsp;")
@@ -203,6 +206,7 @@ for (let r = 1; r <= 5; r++) {
 document.writeln("<br>")
 
 //task-18
+debugger;
 for (let r = 1; r <= 5; r++) {
     for (let c = 1; c <= r; c++) {
         document.writeln("&nbsp;&nbsp;")
@@ -217,9 +221,27 @@ for (let r = 1; r <= 5; r++) {
 document.writeln("<br>")
 
 //task-19
+debugger;
 for (let r = 1; r <= 5; r++) {
     let k = (r * 2) - 1
     for (let c = 1; c <= k; c++) {
+        document.writeln("*")
+    }
+    document.writeln("<br>")
+
+}
+document.writeln("<br>")
+
+
+//task-20
+debugger;
+for (let r = 5; r >= 1; r--) {
+    let k = (r * 2) - 1
+    for (let c = 1; c <= r; c++) {
+        document.writeln("&nbsp&nbsp")
+    }
+
+    for(let i=k;i<=9;i++){
         document.writeln("*")
     }
     document.writeln("<br>")
