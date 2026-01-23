@@ -1,5 +1,5 @@
 function create_Account() {
-    debugger;
+    //debugger;
     account_holder_name = prompt("Enter the Account Holder Name?")
     account_number = prompt("Enter the Account Number?")
     amount = parseInt(prompt("Enter the Initial Amount?"))
@@ -9,12 +9,22 @@ function create_Account() {
 
 
 function deposit_Amount() {
-    debugger;
+    //debugger;
     let account = prompt("Enter the Account Number?")
     if (account_number == account) {
         alert("Account Number is Correct!!")
         let deposit_amt = parseInt(prompt("Enter your Deposit Amount?"))
-        amount += deposit_amt
+        if(deposit_amt==0){
+            alert("Invaild,0 Amount Not Accepted")
+        }
+        else if(deposit_amt<0){
+            alert("Invaild,Negative Amount Not Accepted")
+        }
+        else{
+            amount += deposit_amt
+            alert("Amount Deposit Succesfully!!")
+        }
+        
     } else {
         alert("Account Number is Mismatch!!!")
     }
@@ -22,20 +32,27 @@ function deposit_Amount() {
 
 
 function withdraw() {
-    debugger;
+   // debugger;
     let account_no = prompt("Enter the Account Number?")
     if (account_number == account_no) {
         alert("Account Number is Correct!!")
         let withdraw_amount = prompt("Enter your Withdraw Amount?")
         // amount+=deposit_Amount
-        if (amount >= withdraw_amount) {
-            amount-=withdraw_amount
-            alert("Your Amount is Withdraw Successfully !!!! ")
-        } else(
-            alert("The Amount is Insufficient!!!,,Please deposit the Amount!!")
-        )
-
-    } else {
+        if(withdraw_amount==0){
+            alert("Invaild,0 Amount Not Accepted")
+        }
+        else if(withdraw_amount<0){
+            alert("Invaild,Negative Amount Not Accepted")
+        }
+        else if(amount >= withdraw_amount){
+          amount -= withdraw_amount
+          alert("Your Amount is Withdraw Successfully !!!!")
+        }
+        else{
+            alert("The Amount is Insufficient!!!,,Please check your Balance Amount!!")
+        }
+    } 
+    else {
         alert("Account Number is Mismatch!!!")
     }
 
@@ -44,14 +61,14 @@ function withdraw() {
 }
 
 function account_details() {
-    debugger;
-    document.writeln("Account Details <br>")
-    document.writeln("================  <br>")
-    document.writeln("Account Holder Name:", account_holder_name, '<br>')
-    document.writeln("Account Number:", account_number, ' <br>')
-    document.writeln("Total Amount:", amount, '<br>')
-    document.writeln("=================  <br>")
-     document.writeln("<br>")
+    //debugger;
+    console.log("Account Details")
+    console.log("================"  )
+    console.log("Account Holder Name:", account_holder_name)
+    console.log("Account Number:", account_number)
+    console.log("Total Amount:", amount)
+    console.log("================= ")
+
 
 }
 
