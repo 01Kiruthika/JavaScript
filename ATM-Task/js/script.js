@@ -37,7 +37,6 @@ function withdraw() {
     if (account_number == account_no) {
         alert("Account Number is Correct!!")
         let withdraw_amount = prompt("Enter your Withdraw Amount?")
-        // amount+=deposit_Amount
         if(withdraw_amount==0){
             alert("Invaild,0 Amount Not Accepted")
         }
