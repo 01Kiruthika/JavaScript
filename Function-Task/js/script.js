@@ -58,28 +58,28 @@ document.writeln("<br>")
 
 //task=2
 
-// let total = (tamil, english, maths, science, social) => {
-//     debugger;
-//     let TOTAL = tamil + english + maths + science + social
-//     return TOTAL
-// }
+let total = (tamil, english, maths, science, social) => {
+    debugger;
+    let TOTAL = tamil + english + maths + science + social
+    return TOTAL
+}
 
 
-// debugger;
-// let StudentName = prompt("Enter the Student Name?")
-// let tamil = Number(prompt("Enter your Tamil Mark:"))
-// let english = Number(prompt("Enter your English Mark:"))
-// let maths = Number(prompt("Enter your Maths Mark:"))
-// let science = Number(prompt("Enter your Science Mark:"))
-// let social = Number(prompt("Enter your Social Mark:"))
+debugger;
+let StudentName = prompt("Enter the Student Name?")
+let tamil = Number(prompt("Enter your Tamil Mark:"))
+let english = Number(prompt("Enter your English Mark:"))
+let maths = Number(prompt("Enter your Maths Mark:"))
+let science = Number(prompt("Enter your Science Mark:"))
+let social = Number(prompt("Enter your Social Mark:"))
 
-// let tot = total(tamil, english, maths, science, social)
-// document.writeln(StudentName, " Mark Details <br>")
-// document.writeln("=============== <br>")
-// document.writeln("Your Tamil Mark: ", tamil, "<br>")
-// document.writeln("Your English Mark: ", english, "<br>")
-// document.writeln("Your Maths Mark: ", maths, "<br>")
-// document.writeln("Your Science Mark: ", science, "<br>")
-// document.writeln("Your Social Mark: ", social, "<br>")
-// document.writeln("===============", "<br>")
-// document.writeln("The Total Mark:", tot, "<br>")
+let tot = total(tamil, english, maths, science, social)
+document.writeln(StudentName, " Mark Details <br>")
+document.writeln("=============== <br>")
+document.writeln("Your Tamil Mark: ", tamil, "<br>")
+document.writeln("Your English Mark: ", english, "<br>")
+document.writeln("Your Maths Mark: ", maths, "<br>")
+document.writeln("Your Science Mark: ", science, "<br>")
+document.writeln("Your Social Mark: ", social, "<br>")
+document.writeln("===============", "<br>")
+document.writeln("The Total Mark:", tot, "<br>")
