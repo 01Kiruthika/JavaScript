@@ -5,13 +5,14 @@ let buttn = document.getElementById("btn")
 let coloropt = document.getElementById("color-options")
 let textlabel = document.getElementById("label")
 let changecolor = () => {
-    let colour = coloropt.value;
+    debugger;
+    let direction = coloropt.value;
     //console.log(colour);
 
     let a = clor.value;
     let b = clor1.value;
 
-    body.style.background = "linear-gradient(" + colour + ", " + a + ", " + b + ")";
+    body.style.background = "linear-gradient(" + direction + ", " + a + ", " + b + ")";
 }
 
 
@@ -25,4 +26,5 @@ buttn.style.background = "white"
 coloropt.style.width = "100px"
 coloropt.style.fontSize = "15px"
 textlabel.style.color = 'white'
+body.style.height = "100vh"
 
