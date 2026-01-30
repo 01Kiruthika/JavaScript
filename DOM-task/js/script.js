@@ -1,22 +1,28 @@
 let body = document.getElementById("bg-color")
-
+let clor = document.getElementById("color")
+let clor1 = document.getElementById("color1");
+let buttn = document.getElementById("btn")
+let coloropt = document.getElementById("color-options")
+let textlabel = document.getElementById("label")
 let changecolor = () => {
-    //alert("Hello")
-    let clor = document.getElementById("color")
-    let clor1 = document.getElementById("color1");
+    let colour = coloropt.value;
+    //console.log(colour);
 
-    let a = clor.value
-    let b = clor1.value
+    let a = clor.value;
+    let b = clor1.value;
 
-
-    //console.log(clor.value)
-
-    //body.style.background = clor.value
-    body.style.background = "linear-gradient(to left, " + a + ", " + b + ")";
-    clor.style.background = "blue"
-
-    //  body.style.background = "radial-gradient(closet-side at 60%, " + a + ", " + b + ")";
-
-    return clor
-
+    body.style.background = "linear-gradient(" + colour + ", " + a + ", " + b + ")";
 }
+
+
+clor.style.width = "100px"
+clor1.style.width = "100px"
+buttn.style.position = "absolute"
+buttn.style.left = "370px"
+buttn.style.top = "50px"
+buttn.style.width = "70px"
+buttn.style.background = "white"
+coloropt.style.width = "100px"
+coloropt.style.fontSize = "15px"
+textlabel.style.color = 'white'
+
