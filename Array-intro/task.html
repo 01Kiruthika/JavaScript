@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Task</h1>
+    <label for="">Enter the Student Name:</label>
+    <input type="text" id="sname">
+    <button onclick="Student()">Submit</button>
+
+    <script>
+        let studentlist = []
+        let Student = () => {
+            // alert("HELLO")
+            debugger;
+            let st = document.getElementById("sname").value
+
+            studentlist.push(st)
+            console.log(studentlist)
+        }
+    </script>
+</body>
+
+</html>
