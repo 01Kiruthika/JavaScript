@@ -1,3 +1,6 @@
+
+
+//getElementByElement(),value()
 let body = document.getElementById("bg-color")
 let clor = document.getElementById("color")
 let clor1 = document.getElementById("color1");
@@ -27,4 +30,7 @@ coloropt.style.width = "100px"
 coloropt.style.fontSize = "15px"
 textlabel.style.color = 'white'
 body.style.height = "100vh"
+
+
+
 
