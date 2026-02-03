@@ -5,37 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- <fieldset id="field"> -->
-        <h1>Student Details</h1>
+    <div class="container">
+        <h1 id="name">Student Details</h1>
         <label for="">Student Name:</label><br>
-        <input type="text" id="sname"><br><br>
+        <input type="text" id="sname" class="inputbox"><br><br>
 
         <label for="">Tamil Mark:</label><br>
-        <input type="number" id="Tmark"><br><br>
+        <input type="number" id="Tmark" class="inputbox"><br><br>
 
         <label for="">English Mark:</label><br>
-        <input type="number" id="Emark"><br><br>
+        <input type="number" id="Emark" class="inputbox"><br><br>
 
         <label for="">Maths Mark:</label><br>
-        <input type="number" id="Mmark"><br><br>
+        <input type="number" id="Mmark" class="inputbox"><br><br>
 
         <label for="">Science Mark:</label><br>
-        <input type="number" id="Smark"><br><br>
+        <input type="number" id="Smark" class="inputbox"><br><br>
 
         <label for="">Social Science Mark:</label><br>
-        <input type="number" id="Ssmark"><br><br>
+        <input type="number" id="Ssmark" class="inputbox"><br><br>
+        <div class="box">
+            <button onclick="Studentmark()" id="btn">Submit</button>
+        </div>
 
-        <button onclick="Studentmark()">Submit</button>
 
 
         <h3 id="stname"></h3>
         <h3 id="stotal"></h3>
         <h3 id="savg"></h3>
 
-    <!-- </fieldset> -->
+    </div>
+
+
+
     <script src="js/script.js"></script>
 </body>
 

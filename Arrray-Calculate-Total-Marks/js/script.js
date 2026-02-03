@@ -3,36 +3,36 @@ let Studentmark = () => {
     // alert("HELLO")
     debugger;
     let stname = document.getElementById("sname").value
-    let Tamilmark = document.getElementById("Tmark").value
-    let Engmark = document.getElementById("Emark").value
-    let Mathsmark = document.getElementById("Mmark").value
-    let Sciencemark = document.getElementById("Smark").value
-    let Socialmark = document.getElementById("Ssmark").value
+    let tamilmark = document.getElementById("Tmark").value
+    let engmark = document.getElementById("Emark").value
+    let mathsmark = document.getElementById("Mmark").value
+    let sciencemark = document.getElementById("Smark").value
+    let socialmark = document.getElementById("Ssmark").value
 
      debugger;
     if (stname === "") {
         alert("Please Enter the Student Name!!!")
     } 
-    else if (Tamilmark === "") {
+    else if (tamilmark === "") {
         alert("Please Enter the Tamil Mark!!!")
     }
-     else if (Engmark === "") {
+     else if (engmark === "") {
         alert("Please Enter the English Mark!!!")
     } 
-    else if (Mathsmark === "") {
+    else if (mathsmark === "") {
         alert("Please Enter the Maths Mark!!!")
     }
-     else if (Sciencemark === "") {
+     else if (sciencemark === "") {
         alert("Please Enter the Science Mark!!!")
     }
-     else if (Socialmark === "") {
+     else if (socialmark === "") {
         alert("Please Enter the Social Science Mark!!!")
     }
     else{
         alert("Mark Submitted Sucessfully!!!")
     }
 
-    students.push(stname, Tamilmark, Engmark, Mathsmark, Sciencemark, Socialmark)
+    students.push(stname, tamilmark, engmark, mathsmark, sciencemark, socialmark)
 
 
 
@@ -76,7 +76,3 @@ let Studentmark = () => {
 
 }
 
-// let field = document.getElementById('field')
-// field.style.width = '00px'
-// field.style.padding= '50px'
-// field.style.width = '500px'
