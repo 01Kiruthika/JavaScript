@@ -1,10 +1,9 @@
-/* ---------- Case 1 ---------- */
-function addStudents() {
+let addStudents = () => {
 
     while (true) {
         // debugger;
         let name = prompt("Enter student name (type stop to end):");
-        if (name === null || name === "stop") {
+        if (name === "stop") {
             break;
         }
         if (name === "") {
@@ -14,15 +13,15 @@ function addStudents() {
         students.push(name);
     }
     let [...sname] = students
-    console.log("Students Name:", sname);
+    console.log("Students Name:", students);
 
 }
 
-/* ---------- Case 2 ---------- */
-function removeStudents() {
+
+let removeStudents = () => {
     // debugger;
     let n = Number(prompt("Enter number of students to remove:"));
-
+    alert("Students Removed")
     if (n <= 0) {
         alert("Invalid number");
         return;
@@ -39,8 +38,8 @@ function removeStudents() {
     console.log("Remaining Students:", students)
 }
 
-/* ---------- Case 3 ---------- */
-function convertToString() {
+
+let convertToString = () => {
     // debugger;
     let result = students.toString()
     console.log("Students as String:", result)
@@ -48,8 +47,7 @@ function convertToString() {
 }
 
 
-/* ---------- Case 4 ---------- */
-function convertSeperator() {
+let convertSeperator = () => {
     // debugger;
     let sep = prompt("Enter the Seperator:")
     let Result = students.join(sep)
@@ -57,8 +55,7 @@ function convertSeperator() {
 
 }
 
-/* ---------- Case 5 ---------- */
-function generatename() {
+let generatename = () => {
     // debugger;
     if (students.length === 0) {
         alert("No students entered")
@@ -67,20 +64,25 @@ function generatename() {
     }
     let slen = students.length
     for (let i = 0; i < slen; i++) {
-        console.log((i+1) + ". " + students[i]);
+        console.log((i + 1) + ". " + students[i]);
     }
 
 
 }
 
-/* ---------- Case 6 ---------- */
-function findindex() {
+let findindex = () => {
     // debugger;
     let Stu = prompt("Enter the student name to find Index:")
     console.log(students)
     let a = students.indexOf(Stu)
-    console.log("Student Name:",Stu);
-    console.log("Student Index Position:", a)
+
+    if (a == -1) {
+        alert("Student Name Does not Have!!")
+    } else {
+        console.log("Student Name:", Stu);
+        console.log("Student Index Position:", a)
+    }
+
 
 }
 
