@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+
+<body>
+    <script>
+        // let a = [23, 5, 6, "raja"];
+
+        /*
+          key:value
+
+          syntax:
+          ===========
+
+          let variable = {
+               key1:value1,
+               key2:value2,
+               key3:value3,
+               key4:[]
+               key5:{
+                      key1:value1,
+                      key2:value2,
+                   }
+          
+          };
+
+
+
+        */
+
+        let student = {
+              rollno: 1001, 
+              studentName:"Boopathiraj",
+              fathername:"samy",
+              dob:"2002-02-02",
+              email:"raja@gmail.com",
+              phone:"+91-9994339155",
+              address:"Karur",
+              detailAddress:{
+                     doorno:12,
+                     streetname:"sivaji street",
+                     taluk:"aravakurichi",
+                     district:'karur',
+                     pin:639002
+              },
+              marks:[50,60,70,80,90]
+
+        }
+
+//    let ss =      new Object({
+//                      doorno:12,
+//                      streetname:"sivaji street",
+//                      taluk:"aravakurichi",
+//                      district:'karur',
+//                      pin:639002
+//               })
+
+        // console.log(typeof student ,ss)
+
+        // two types
+
+        //  dot notation, bracket notation
+
+       console.log(student['studentName']);
+       console.log(student['detailAddress']['taluk']);
+
+       console.log(student.fathername);
+       console.log(student.detailAddress.district);
+
+    //    add 
+
+       student.motherName = "Mani"
+
+       student['brothername'] = "Siva"
+
+    //    update
+
+     student.email = "siva@gmail.com"
+
+    //  delete
+
+      delete student.dob
+
+    
+    //    
+
+   let k =    Object.keys(student)
+       console.log(k);
+
+    let v =    Object.values(student)
+       console.log(v);
+
+   let kv=    Object.entries(student)
+       console.log(kv);
+       
+
+    </script>
+</body>
+
+</html>
