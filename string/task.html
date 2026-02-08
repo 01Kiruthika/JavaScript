@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="UpperLower">
+        <h2>Find Lower and Upper Letters</h2>
+        <div class="box">
+            <label for="" class="txt">Enter a String</label>
+            <input type="text" id="textInput">
+        </div>
+        <div class="box-btn">
+            <button onclick="upperlowerletters()" class="btn">Submit</button>
+        </div>
+
+        <h4 id="upperLetters"></h4><br>
+        <h4 id="lowerLetters"></h4>
+    </div>
+
+    <script>
+        let upperlowerletters = () => {
+            // alert("Welcome")
+            // debugger;
+            let text = document.getElementById("textInput").value;
+            let upperLetters = "";
+            let lowerLetters = "";
+
+            if (text === "") {
+                alert("Please,Enter the String")
+
+            }
+
+            for (let i = 0; i < text.length; i++) {
+                // debugger;
+                let ch = text[i];
+
+                let upper = ch.match(/[A-Z]/g);
+                // let lower = ch.match(/[a-z]/g);
+
+                if (ch == upper) {
+                    upperLetters += ch
+                } else {
+                    lowerLetters += ch
+                }
+            }
+
+
+            let upperlet = document.getElementById("upperLetters")
+            upperlet.innerText = "Uppercase Letters: " + upperLetters;
+
+
+            let lowerlet = document.getElementById("lowerLetters")
+            lowerlet.innerText = "Lowercase Letters: " + lowerLetters;
+        }
+    </script>
+</body>
+
+</html>

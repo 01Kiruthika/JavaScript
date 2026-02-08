@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.UpperLower {
+    border: 2px solid blue;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: teal;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.box {
+    /* border: 2px solid black; */
+    margin: 30px;
+    padding: 10px;
+}
+
+#textInput {
+    width: 250px;
+    outline: none;
+    padding: 3px;
+}
+
+.box-btn {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center
+}
+
+.btn {
+    padding: 5px 40px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: teal;
+    color: white;
+}
+
+#upperLetters {
+    padding: 20px;
+}
+
+#lowerLetters {
+    padding: 20px;
+
+}
