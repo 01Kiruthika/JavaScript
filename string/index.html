@@ -1,17 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h2>String</h2>
 
     <script>
         //String Literal
-        let s1="Hello"
+        let s1 = "Hello"
         let s2 = 'Hello'
+
+        //string Constructor
+        let S1 = new String('abcd')
+
+        //string Interpolation
+        let name = "Kiruthika";
+        let msg = 'you are learning from ${name}';
+        console.log(msg)
+
+        //length of String
+        let len = name.length
+        console.log(len)
+
+        //Escape Characters
+        let a = "\'SDLC\' is a learning Portal."
+        let b = "\"SDLC\" is a learning Portal."
+        let c = "\\SDLC\\ is a learning Portal."
+        console.log(a);
+        console.log(b);
+        console.log(c);
+
+        //Finding a Substring
+        let A = "Javascript Tutorial"
+        console.log(A.substring(0, 10));
+
+        //toUpperCase()
+        let x = 'javascript'
+        console.log(x.toUpperCase());
+
+
+        //toLowerCase()
+        let X = 'KIRUTHIKA'
+        console.log(X.toLowerCase());
+
+
+        //charAt(index)
+        let txt = 'Hello'
+        console.log(txt.charAt(1));
+
+
+        //charCodeAt()
+        console.log(txt.charCodeAt(2));
+
+        //at()
+        console.log(txt.at(-1));
+
+        //array Style
+        console.log(txt[1]);
+
+        //slice()
+        let text = "Apple Banana Kiwi"
+        console.log(text.slice(6, 13));
+        console.log(text.slice(6));
+        console.log(text.slice(-11));
+
+        //trim()
+        let Txt = "  Hello  "
+        console.log(Txt.trim());
+        console.log(Txt.trimStart());
+        console.log(Txt.trimEnd());
+
+
+        //padstart(length,value)
+        let text1 = "5"
+        let padded = text1.padStart(4, "0")
+        let padded1 = text1.padEnd(4, "0")
+        console.log(padded);
+        console.log(padded1);
+
+        //Repeat()
+        console.log(txt.repeat(3));
+
+        //replce()
+        let AB = "Please Visit Microsoft!"
+        console.log(AB.replace("Microsoft", "AROSPACE"));
+        console.log(AB.replace(/Microsoft/i, "DEX"));
+        console.log(AB.replace(/Microsoft/g, "HEAVEN"));
+
+        //replaceAll()
+        console.log(AB.replaceAll("Cat", "Dog"));
+
+        //split()
+        let num = "A,B,C"
+        console.log(num.split(","));
+        console.log(num.split(""));
+        console.log(num.split(" "));
+
     </script>
 </body>
+
 </html>
