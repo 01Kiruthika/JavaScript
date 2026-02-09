@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            width: 250px;
+            height: 250px;
+        }
+
+        .form {
+            border: 2px solid black;
+            width: 350px;
+            height: 250px;
+            padding: 10px;
+            position: relative;
+            background-color: sandybrown;
+            color: white;
+            margin: 10px;
+        }
+
+        .form h2 {
+            text-align: center;
+        }
+
+        #opt {
+            margin: 20px;
+
+        }
+
+        .butt {
+            /* border: 2px solid blue; */
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+
+        }
+
+        .btn {
+            /* border: 2px solid; */
+            padding: 5px;
+            border: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Event Listener</h3>
+    <div class="box">
+
+    </div>
+    <form action="" class="form">
+        <h2>Form</h2>
+        <label for="">Enter a String</label>
+        <input type="text" id="cate"><br>
+        <select name="" id="opt">
+            <option value="HTML">HTML</option>
+            <option value="PHP">PHP</option>
+            <option value="JS">JS</option>
+        </select>
+        <br>
+        <div class="butt">
+            <button type="submit" class="btn">Submit</button>
+        </div>
+    </form>
+
+
+
+    <script>
+        let box = document.querySelector(".box");
+
+        let cate = document.querySelector("#cate")
+        let opt = document.querySelector("#opt")
+
+        // //Mouse events
+        box.addEventListener("click", () => {
+            box.style.background = "red";
+        });
+
+        box.addEventListener("dblclick", () => {
+            box.style.background = "blue";
+        });
+
+        box.addEventListener("mousemove", () => {
+            console.log("mousemove");
+
+        });
+
+        box.addEventListener("mouseenter", () => {
+            console.log("mouseenter");
+
+        });
+
+        box.addEventListener("mouseout", () => {
+            console.log("mouseout");
+
+        });
+
+        // // Keyboard Events
+        cate.addEventListener("keydown", () => {
+            console.log("keydown");
+
+        });
+        cate.addEventListener("keypress", () => {
+            console.log("keypress");
+
+        });
+        cate.addEventListener("keyup", () => {
+            console.log("keyup");
+
+        });
+        cate.addEventListener("input", () => {
+            console.log("input");
+
+        });
+
+        //Form Events
+
+        opt.addEventListener("change", () => {
+            console.log(opt.value);
+        })
+
+        cate.addEventListener("focus", () => {
+            cate.style.background = "red"
+        })
+    </script>
+
+</body>
+
+</html>
