@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage ,Session Storage and JSON</title>
+</head>
+
+<body>
+    <h2>Local Storage ,Session Storage and JSON</h2>
+
+    <script>
+        ///local Storage===>Permantent
+        //setItem
+        localStorage.setItem("name", "kalai")
+        localStorage.setItem("age", 30)
+        localStorage.setItem("email", "kalai@gmail.com")
+
+        //getItem
+        let gt = localStorage.getItem("name")
+        console.log(gt)
+
+        //remove==>Remove particular data
+        localStorage.removeItem("age")
+
+
+        //length
+        let len = localStorage.length
+        console.log(len);
+
+        // //clear
+        // localStorage.clear()
+
+
+
+        ///Session Storage===>Temporary
+        //setItem
+        sessionStorage.setItem("name", "kalai")
+        sessionStorage.setItem("age", 30)
+        sessionStorage.setItem("email", "kalai@gmail.com")
+
+        //getItem
+        let gt1 = sessionStorage.getItem("name")
+        console.log(gt1)
+
+        //remove==>Remove particular data
+        sessionStorage.removeItem("age")
+
+
+        //length
+        let len1 = sessionStorage.length
+        console.log(len1);
+
+        // //clear
+        // sessionStorage.clear()
+
+
+
+        //JSON==>Javascript object notation
+        let arr = [{name:"abi"},{name:"kalai"}]
+        console.log(arr);
+
+        let carr = JSON.stringify(arr)
+        console.log(carr);
+ 
+        let sarr = JSON.parse(carr)
+        console.log(sarr);
+
+        localStorage.setItem("studentnames",carr)
+        
+
+    </script>
+</body>
+
+</html>
