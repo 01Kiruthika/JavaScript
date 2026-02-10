@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <h3>Register Form</h3>
+        <label for="">Enter Your Name:</label><br>
+        <input type="text" id="text"><br>
+        <span id="terror"></span><br>
+        <label for="">Enter Your Roll No:</label><br>
+        <input type="number" id="rollno"><br>
+        <span id="perror"></span><br>
+        <label for="">Enter Your Email:</label><br>
+        <input type="email" id="email"><br>
+        <span id="eerror"></span><br>
+        <label for="">Enter Your Phone Number:</label><br>
+        <input type="number" id="no"><br>
+        <span id="nerror"></span><br>
+        <label for="">Enter Your Date of Birth:</label><br>
+        <input type="date" id="dob"><br>
+        <span id="derror"></span><br>
+        <button onclick="sub()">submit</button>
+    </form>
+    <script>
+        let sub = () => {
+            // debugger;
+            //  alert("Hello")
+            let arr = []
+            let oj = {
+                name: "pname"
+            }
+            let isvalid = true
+            let arrid = ["text", "rollno", "email", "no", "dob"]
+            let arrerr = ["terror", "perror", "eerror", "nerror", "derror"]
+            for (let i = 0; i < arrid.length; i++) {
+                let inid = document.getElementById(arrid[i])
+                let inerr = document.getElementById(arrerr[i])
+                let vl = inid.value
+
+                if (vl === "") {
+                    inerr.innerText = "fill the " + arrid[i] + " box"
+                    inerr.style.color = "red"
+                    inid.style.border = "1px solid red"
+                    isvalid = false
+
+                } else {
+
+                    if (arrid[i] == "rollno") {
+                        // debugger;
+                        if (vl.length <= 8) {
+                            inerr.innerText = arrid[i] + " must be 8 characters."
+                            inerr.style.color = "red"
+                            inid.style.border = "1px solid red"
+                            isvalid = false
+                        } 
+
+                    }
+                    else if (arrid[i] == "email") {
+                        // debugger;
+                        let mail = "/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/"
+                        if (vl != mail) {
+                            inerr.innerText = arrid[i] + " is Invaild"
+                            inerr.style.color = "red"
+                            inid.style.border = "1px solid red"
+                            isvalid = false
+                        }
+                    }
+                   else if (arrid[i] == "no") {
+                        // debugger;
+                        if (vl.length <= 10) {
+                            inerr.innerText = "Phone Number must be in 10 Numbers."
+                            inerr.style.color = "red"
+                            inid.style.border = "1px solid red"
+                            isvalid = false
+                        } 
+                    }
+
+                    inid.style.border = "1px solid"
+                    inerr.innerText = ""
+                    oj[arrid[i]] = inid.value
+                }
+
+
+
+
+
+
+        
+            }
+
+            if (isvalid) {
+                arr.push(oj)
+            }
+
+            console.log(arr)
+        }
+    </script>
+</body>
+
+</html>
