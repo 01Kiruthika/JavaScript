@@ -72,7 +72,7 @@ let generatename = () => {
 
 let findindex = () => {
     // debugger;
-    let Stu = prompt("Enter the student name to find Index:")
+    let Stu = prompt(students,"Enter the student name to find Index:")
     console.log(students)
     let a = students.indexOf(Stu)
 

@@ -11,50 +11,57 @@
     <h3>Search Methods</h3>
 
     <script>
-        //indexof()
-        let txt = "Hello World hello hello hello"
-        console.log(txt.indexOf("Hello"));
-        console.log(txt.indexOf("hello"));
-        console.log(txt.indexOf("hello", 3));
+        // //indexof()
+        // let txt = "Hello World hello hello hello"
+        // console.log(txt.indexOf("Hello"));
+        // console.log(txt.indexOf("hello"));
+        // console.log(txt.indexOf("hello", 3));
 
-        //lastindexof()
-        console.log(txt.lastIndexOf("hello"));
-
-
-        //includes()
-        console.log(txt.includes("hello"));
-        console.log(txt.includes("hii"));
-
-        //startswith()
-        console.log(txt.startsWith("Hello"));
-        console.log(txt.startsWith("world"));
-
-        //Endswith()
-        console.log(txt.endsWith("Hello"));
-        // console.log(txt.endsWith("hello",20));
+        // //lastindexof()
+        // console.log(txt.lastIndexOf("hello"));
 
 
-        //Search()
-        /*
-        Regex==>Used to Match,search or manipulate text.
-        */
-        let text = "hello world"
-        console.log(text.search("world"));
-        console.log(text.search("World"));
-        console.log(text.search(/World/i));
+        // //includes()
+        // console.log(txt.includes("hello"));
+        // console.log(txt.includes("hii"));
 
-        //match()+regex
-        let num = "cat dog cat cat"
-        console.log(num.match("cat"));
-        console.log(num.match(/cat/));
-        console.log(num.match(/cat/g));
+        // //startswith()
+        // console.log(txt.startsWith("Hello"));
+        // console.log(txt.startsWith("world"));
+
+        // //Endswith()
+        // console.log(txt.endsWith("Hello"));
+        // // console.log(txt.endsWith("hello",20));
+
+
+        // //Search()
+        // /*
+        // Regex==>Used to Match,search or manipulate text.
+        // */
+        // let text = "hello world"
+        // console.log(text.search("world"));
+        // console.log(text.search("World"));
+        // console.log(text.search(/World/i));
+
+        // //match()+regex
+        let num = "cat dog cat"
+        // console.log(num.match("cat"));
+        // console.log(num.match(/cat/));
+        // console.log(num.match(/cat/g));
 
         //matchall()
-        console.log(num.matchAll(/cat/g));
+        num=num.matchAll(/cat/g);
         for (let item of num) {
             console.log(item[0],item.index);
 
         }
+
+        // let val = "cat dog cat";
+        // let result = val.matchAll(/cat/g);
+        // console.log(result);
+        // for (let item of result) {
+        //     console.log(item[0], item.index);
+        // }
     </script>
 </body>
 
