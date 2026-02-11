@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="box">
+      <img src="image/2.1.png" alt="">
+    </div>
+
+
+    <script>
+        let box = document.querySelector(".box")
+        let posleft = 0
+        let postop = 0
+        document.addEventListener("keydown", (event) => {
+            console.log(event.key);
+            // debugger;
+            switch (event.key) {
+                case "ArrowDown":
+                    postop += 10
+                    break;
+                case "ArrowUp":
+                    postop -= 10
+                    break;
+                case "ArrowLeft":
+                    posleft -= 10
+                    break;
+                case "ArrowRight":
+                    posleft += 10
+                    break;
+
+            }
+
+            box.style.left = posleft + "px"
+            box.style.top =  postop + "px"
+
+
+        })
+    </script>
+</body>
+
+</html>

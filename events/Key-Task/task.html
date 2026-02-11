@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="fish">
+        <img src="image/4.1.png" alt="">
+
+    </div>
+
+    <script>
+        let fish = document.querySelector(".fish")
+        let isDragg = false;
+        let OffSetX = 0
+        let OffSetY = 0
+
+        document.addEventListener("mousedown", (event) => {
+            // debugger;
+            isDragg = true;
+            fish.style.cursor = "grabbing"
+
+            OffSetX = event.clientX - fish.offsetLeft;
+            OffSetY = event.clientY - fish.offsetTop;
+            // console.log("Client X and Y",event.clientX , event.clientY);
+            // console.log("Fish Offset Left and Top",fish.offsetLeft , fish.offsetTop);
+            console.log("Offset X and y", OffSetX, OffSetY);
+        })
+
+        document.addEventListener("mousemove", (event) => {
+            // debugger;
+            if (isDragg) {
+                let x = fish.style.left = event.clientX - OffSetX + "px";
+                let y = fish.style.top = event.clientY - OffSetY + "px"
+                console.log("Fish Move", x, y);
+
+            }
+
+        })
+
+        document.addEventListener("mouseup", () => {
+            // debugger;
+            isDragg = false;
+            fish.style.cursor = "grab"
+        })
+
+
+    </script>
+</body>
+
+</html>
